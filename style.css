@@ -12,6 +12,7 @@ h1{
 header{
     margin-bottom: 50px;
     min-width: 900px;
+
     background-color: #eee;
     font-size: 0;
 }
@@ -46,6 +47,8 @@ nav a+a{
 /* -----main----- */
 main{
     min-width: 900px;
+
+    font-size: 0;
 }
 .main-container{
     margin: 0 auto;
@@ -72,6 +75,7 @@ p{
 
     line-height: 22px;
     font-weight: 200;
+    font-size: 16px;
     color: #585858
 }
 button{
@@ -81,6 +85,7 @@ button{
     margin: 0 auto;
     padding: 15px;
     width: 220px;
+    cursor: pointer;
   
     background: linear-gradient(#ffbb57 0%,#ffbb57 50%,#f99403 50%,#f99403 100%);
     font-size: 25px;
@@ -92,6 +97,7 @@ button{
     width: 220px;
 
     line-height: 22px;
+    font-size: 16px;
     color: #585858
 }
 .image-container{
