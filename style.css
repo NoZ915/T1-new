@@ -14,23 +14,32 @@ header{
     min-width: 900px;
 
     background-color: #eee;
-    font-size: 0;
 }
 .header-container{
     margin: 0 auto;
     padding: 30px 0;
     width: 900px;
     text-align-last: justify;
+
+    font-size: 0;
 }
-.header-container a{
+.header-container>a{
     display: inline-block;
     vertical-align: middle;
+    width: 79px;
+    height: 95px;
+}
+.header-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 nav{
     display: inline-block;
     vertical-align: middle;
 }
 nav a{
+    display: inline-block;
     padding: 25px;
 
     text-decoration: none;
@@ -48,13 +57,13 @@ nav a+a{
 main{
     margin-bottom: 75px;
     min-width: 900px;
-
-    font-size: 0;
 }
 .main-container{
     margin: 0 auto;
     width: 850px;
     text-align: center;
+
+    font-size: 0;
 }
 section{
     display: inline-block;
@@ -82,17 +91,20 @@ p{
 button{
     display: block;
     border: none;
-    border-radius: 3px;
+    border-radius: 6px;
     margin: 0 auto;
     padding: 15px;
     width: 220px;
     cursor: pointer;
-  
-    background: linear-gradient(#ffbb57 0% 50%,#f99403 50% 100%);
+
     font-size: 25px;
+    background: linear-gradient(#ffbb57 0% 50%,#f99403 50% 100%);
     color: white;
 }
-.button_span-container span{
+button:hover{
+    background: linear-gradient(#f99403 0% 50%,#ffbb57 50% 100%);
+}
+.button-content span{
     display: block;
     margin: 0 auto;
     width: 220px;
@@ -118,7 +130,7 @@ article{
 .article-container h3{
     margin-bottom: 25px;
 }
-.paragraph-container{
+.paragraph-content{
     columns: 2;
     column-gap: 50px;
 }
@@ -128,7 +140,6 @@ article{
 footer{
     min-width: 900px;
 
-    font-size: 0;
     background-color: #eee;
 }
 .footer-container{
@@ -136,6 +147,8 @@ footer{
     padding: 20px 0;
     width: 900px;
     text-align-last: justify;
+
+    font-size: 0;
 }
 .footer-container span{
     display: inline-block;
