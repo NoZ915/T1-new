@@ -7,11 +7,13 @@
 h1{
     display: none;
 }
+body{
+    min-width: 900px;
+}
 
 /* -----header----- */
 header{
     margin-bottom: 50px;
-    min-width: 900px;
 
     background-color: #eee;
 }
@@ -56,19 +58,18 @@ nav a+a{
 /* -----main----- */
 main{
     margin-bottom: 75px;
-    min-width: 900px;
 }
 .main-container{
     margin: 0 auto;
     width: 850px;
+    box-sizing: border-box;
     text-align: center;
 
     font-size: 0;
 }
 section{
     display: inline-block;
-    margin-right: 90px;
-    width: 350px;
+    width: 50%;
     vertical-align: top;
     text-align: left;
 }
@@ -88,17 +89,21 @@ p{
     font-size: 16px;
     color: #585858
 }
+.button-content{
+    width: fit-content;
+    margin: 0 auto;
+}
 button{
     display: block;
     border: none;
     border-radius: 6px;
-    margin: 0 auto;
     padding: 15px;
     width: 220px;
     cursor: pointer;
 
     font-size: 25px;
     background: linear-gradient(#ffbb57 0% 50%,#f99403 50% 100%);
+    transition: 2s;
     color: white;
 }
 button:hover{
@@ -107,7 +112,6 @@ button:hover{
 .button-content span{
     display: block;
     margin: 0 auto;
-    width: 220px;
 
     line-height: 22px;
     font-size: 14px;
@@ -116,12 +120,12 @@ button:hover{
 .image-container{
     display: inline-block;
     vertical-align: top;
+    width: 50%;
 }
 
 /* -----article----- */
 article{
     margin-bottom: 150px;
-    min-width: 900px;
 }
 .article-container{
     margin: 0 auto;
@@ -138,8 +142,6 @@ article{
 /* -----footer----- */
 /* -----use text-align-last----- */
 footer{
-    min-width: 900px;
-
     background-color: #eee;
 }
 .footer-container{
@@ -163,7 +165,6 @@ ul{
 }
 li{
     display: inline-block;
-    vertical-align: middle;
 }
 li+li{
     margin-left: 15px;
@@ -183,23 +184,7 @@ i:hover{
 /* -----footer----- */
 /* -----use float----- */
 /* footer{
-    min-width: 900px;
-
     background-color: #eee;
-}
-.box{
-    display: inline-block;
-    height:28px;
-    vertical-align: middle;
-
-    font-size: 0;
-}
-.box::before{
-    content: "";
-    display: inline-block;
-    width: 0px;
-    height: 100%;
-    vertical-align: middle;
 }
 .footer-container{
     display: block;
@@ -215,6 +200,7 @@ i:hover{
     color: #818181;
 }
 ul{
+    display: flow-root;
     float: right;
 }
 li{
