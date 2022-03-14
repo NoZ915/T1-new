@@ -10,8 +10,6 @@ body{
 
 /* -----header----- */
 header{
-    margin-bottom: 50px;
-
     background-color: #eee;
 }
 .header-container{
@@ -55,24 +53,26 @@ nav a:hover{
 main{
     margin-bottom: 150px;
 }
-.main-container{
+.section-container{
     margin: 0 auto;
     width: 850px;
-    text-align: center;
     
     font-size: 0;
 }
 section{
-    margin-bottom: 75px;
+    margin-bottom: 45px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    background-color: #fdfdfd;
 }
 .section-content{
     display: inline-block;
     width: 50%;
-    text-align: left;
 }
 .image-content{
     display: inline-block;
     vertical-align: top;
+    text-align: center;
     width: 50%;
 }
 .image-content img{
@@ -121,8 +121,11 @@ button:hover{
 }
 
 /* -----main:article----- */
-article{
-    text-align: left;
+.article-container{
+    margin: 0 auto;
+    width: 850px;
+
+    font-size: 0;
 }
 .paragraph-content{
     columns: 2;
@@ -157,9 +160,6 @@ footer{
     display: inline-block;
     vertical-align: middle;
     text-align-last: center;
-}
-.link a{
-    display: inline-block;
 }
 .link a+a{
     margin-left: 15px;
