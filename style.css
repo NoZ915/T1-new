@@ -4,28 +4,31 @@
     outline: 0.5px solid rgb(184, 184, 66);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body{
+/* body{
     min-width: 900px;
-}
+} */
 
 /* -----header----- */
 header{
+    border-bottom: #e6e6e6 1px solid;
     background-color: #eee;
 }
 .header-container{
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 20px;
     width: 900px;
     text-align-last: justify;
 
     font-size: 0;
 }
-.header-container>a{
+h1{
     display: inline-block;
     vertical-align: middle;
     width: 79px;
     height: 95px;
-    background: url(./img/zerotype.png);
+}
+.header-container>a{
+    display: inline-block;
 }
 .header-container img{
     width: 100%;
@@ -50,9 +53,6 @@ nav a:hover{
 }
 
 /* -----main:section----- */
-main{
-    margin-bottom: 150px;
-}
 .section-container{
     margin: 0 auto;
     width: 850px;
@@ -62,7 +62,7 @@ main{
 section{
     margin-bottom: 45px;
     padding-top: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 120px;
     background-color: #fdfdfd;
 }
 .section-content{
@@ -75,9 +75,14 @@ section{
     text-align: center;
     width: 50%;
 }
-.image-content img{
+.image-content>div{
+    margin: 0 auto;
     width: 90%;
-    height: 90%;
+}
+.image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 h2{
     font-size: 50px;
@@ -88,8 +93,6 @@ h3{
     font-weight: 400;
 }
 p{
-    margin-bottom: 20px;
-
     line-height: 22px;
     font-weight: 200;
     font-size: 16px;
@@ -121,17 +124,18 @@ button:hover{
 }
 
 /* -----main:article----- */
+article{
+    margin-bottom: 150px;
+}
 .article-container{
     margin: 0 auto;
     width: 850px;
-
-    font-size: 0;
 }
-.paragraph-content{
+.article-content{
     columns: 2;
     column-gap: 50px;
 }
-.paragraph-content>p{
+.article-content>p{
     display: inline-block;
     margin: 20px 0 0 0;
 }
@@ -139,6 +143,7 @@ button:hover{
 /* -----footer----- */
 /* -----use text-align-last----- */
 footer{
+    border-top: #e6e6e6 1px solid;
     background-color: #eee;
 }
 .footer-container{
@@ -156,12 +161,15 @@ footer{
     font-size: 14px;
     color: #818181;
 }
-.link{
+.social-media{
     display: inline-block;
     vertical-align: middle;
     text-align-last: center;
 }
-.link a+a{
+.social-media a{
+    display: inline-block;
+}
+.social-media a+a{
     margin-left: 15px;
 }
 i{
